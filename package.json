@@ -1,7 +1,7 @@
 {
-  "name": "FrontEndDevEnviornment",
+  "name": "Angular2DevEnviornment",
   "version": "1.0.0",
-  "description": "Boilerplate front-end project directory/taskrunner",
+  "description": "Boilerplate Angular2 project directory/taskrunner",
   "main": "lite-server",
   "scripts": {
     "tsc": "tsc",
