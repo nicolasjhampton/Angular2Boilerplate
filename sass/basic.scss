@@ -1,0 +1,47 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    font-weight: bolder;
+    font-size: 2rem;
+}
+h3 {
+    font-size: 1.5rem;
+}
+h4 {
+    font-weight: bolder;
+    font-size: 1rem;
+    color: black;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    background: rgba(240,120,66, 0.3);
+    #title {
+        border-radius: 8px;
+        padding: 20px 20px;
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        h2, h3{
+            display: inline-flex;
+            flex-direction: column;
+            color: Black;
+        }
+    }   
+}
+
+#menu {
+    padding: 8px 0px;
+    display: flex;
+    background: rgba(240,120,66,.7);
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang='en'>
+	<head>
+        <title>Angular2 Boilerplate</title>
+		<meta chartype="utf-8" name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1">
+		<link rel='stylesheet' type='text/css'href='https://fonts.googleapis.com/css?family=Arvo|Poiret+One'>
+        <link rel="stylesheet" type='text/css' href="//normalize-css.googlecode.com/svn/trunk/normalize.css">
+		<link rel="stylesheet" type="text/css" href="./css/application.css">
+        <!-- 1. Load libraries -->
+        <!--IE required polyfills, in this exact order -->
+        <script src="node_modules/es6-shim/es6-shim.min.js"></script>
+        <script src="node_modules/systemjs/dist/system-polyfills.js"></script>
+
+        <script src="node_modules/angular2/bundles/angular2-polyfills.js"></script>
+        <script src="node_modules/systemjs/dist/system.src.js"></script>
+        <script src="node_modules/rxjs/bundles/Rx.js"></script>
+        <script src="node_modules/angular2/bundles/angular2.dev.js"></script>
+        <script>
+            System.config({
+                packages: {        
+                    app: {
+                        format: 'register',
+                        defaultExtension: 'js'
+                    }
+                }
+            });
+            System.import('app/main')
+                .then(null, console.error.bind(console));
+        </script>
+    </head>
+    <body>
+        <div id="header">
+            <div id="title">
+                <h2>A Test App</h2>
+                <h3>For learning purposes</h3>
+            </div>
+        </div>
+        <div id="menu">
+            <h4>Home</h4>
+            <h4>About</h4>
+            <h4>Fake</h4>
+            <h4>Menu</h4>
+            <h4>Items</h4>
+            <h4>Woot</h4>
+        </div>
+        <my-app>Loading...</my-app>
+
+  </body>
+</html>
+
